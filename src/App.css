@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+ /* Styling Login.js  */
+ .component-login {
+  width: 35%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (0px <=width <=325px) {
+  .component-login {
+    width: 85%;
+  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (326px <=width <=650px) {
+  .component-login {
+    width: 75%;
+  }
+}
+@media (651px <=width <=896px) {
+  .component-login {
+    width: 60%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Styling Header.js  */
+.component-header{
+ padding-bottom : 3rem ;
+}
+.img-container {
+  width: 40%;
+}
+.img-responsive {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* styling Form.js */
+.tab-btn {
+  padding: 1rem 0;
+  width: 50%;
+  margin-bottom : 2rem ;
+}
+.btn-active {
+  font-weight: 900;
+  border-bottom : 3px solid var(--primary-color);
+}
+.tab-btn p{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* styling Signin.js and signup*/
+form input{
+ width : 90%;
+ padding : 0.5rem 0.9rem;
+ margin-bottom : 1rem ;
+ border-radius : 1.5rem;
+ border : 1px solid var(--border-color);
+}
+.btn-cta{
+ width : 85% ;
+ padding : 0.75rem 0;
+ margin : 1rem 0 ;
+ font-weight : 900;
+ border-radius : 1.5rem;
+ border: none ;
+ color : var(--white-color);
+ background-color : var(--primary-color); 
+ cursor : pointer;
+}
+.component-signin p{
+ text-align: end;
+ font-weight : 500;
+}
+
+/* styling footer  */
+.component-footer{
+ padding : 1rem ;
+ margin-top : 1rem ;
+ gap : 1.5rem ;
+}
+.social-icons-panel{
+ width : 50% ;
+ display : flex ;
+ justify-content: space-between;
+}
+.social-icon{
+ cursor: pointer ;
+ border : 1px solid var(--light-gray-color);
+ border-radius : 50% ;
+ padding : 0.5rem ;
+ display : flex ;
+ align-items : center ;
+ justify-content: center;
+}
+svg{
+ font-size : 1.4rem ;
+}
+.highlighted-text{
+ color : var(--primary-color);
+ cursor : pointer ;
+}
+.component-footer p:first-child{
+ color : var(--border-color);
 }
